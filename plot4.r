@@ -30,7 +30,7 @@ lines(data$DateTime, data$Sub_metering_1)
 lines(data$DateTime, data$Sub_metering_2, col='red')
 lines(data$DateTime, data$Sub_metering_3, col='blue')
 legend('topright', legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'),
-       lty=c(1,1,1), lwd=c(2.5,2.5, 2.5), col=c("black","red", "blue") , cex=0.8, , bty='n')
+       lty=c(1,1,1), lwd=c(2.5,2.5, 2.5), col=c("black","red", "blue"), bty='n')
 plot(data$DateTime, data$Global_reactive_power, type="n", xlab="datetime", ylab="Global_reactive_power")
 lines(data$DateTime, data$Global_reactive_power)
 dev.off()
